@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Tell us what you’re dreaming up. We’d love to hear about your idea and goals.">
+    <title>Contact — A R Digital Solutions</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+    <link rel="apple-touch-icon" href="assets/logo.jpeg">
+    <meta property="og:site_name" content="A R Digital Solutions">
+    <meta property="og:title" content="Contact — A R Digital Solutions">
+    <meta property="og:description"
+        content="Thoughtful design and dependable digital experiences from A R Digital Solutions.">
+    <meta property="og:image" content="assets/logo.jpeg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="assets/logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-contact">
+    <div class="shell">
+        <header class="top"><a class="brand" href="index.html"><img src="assets/logo.jpeg" alt=""><span>A R
+                    <b>Digital</b></span></a><button class="menu" aria-label="Open navigation"
+                aria-expanded="false">☰</button>
+            <nav class="nav"><a class="" href="index.html">Home</a><a class="" href="work.html">Work</a><a class=""
+                    href="services.html">Services</a><a class="" href="about.html">About</a><a class=""
+                    href="process.html">Process</a><a class="" href="reviews.html">Reviews</a><a class="active"
+                    href="contact.html">Contact</a><a class="" href="web-design.html">Design</a><a class=""
+                    href="development.html">Build</a><a class="" href="care.html">Care</a></nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <div class="eyebrow">A R DIGITAL SOLUTIONS</div>
+                    <h1>Let’s make it happen.</h1>
+                    <p class="lead">Tell us what you’re dreaming up. We’d love to hear about your idea and goals.</p>
+                    <div class="actions"><a class="btn" href="contact.html">Let’s talk ↗</a><a class="link"
+                            href="work.html">Explore our work →</a></div>
+                    <div class="founders">
+                        <article class="founder"><span class="founder-avatar">AG</span><span
+                                class="founder-copy"><strong>Areeba Gull</strong><small>CEO &amp;
+                                    Co-Founder</small></span><span class="founder-mark">✦</span></article>
+                        <article class="founder founder-rida"><span class="founder-avatar">RA</span><span
+                                class="founder-copy"><strong>Rida Aqib</strong><small>Co-Founder · 50%
+                                    Partner</small></span><span class="founder-mark">✦</span></article>
+                    </div>
+                </div>
+                <div class="orb-scene">
+                    <div class="orbit"></div>
+                    <div class="orbit two"></div>
+                    <div class="orb"></div>
+                    <div class="floatcard"><b>01</b>IDEA → REALITY</div>
+                    <div class="floatcard low"><b>✦</b>Made with care</div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="eyebrow">START A PROJECT</div>
+                <h2>Tell us a little about your idea.</h2>
+                <p class="lead">Share your details and what you’re looking for. Your email app will open with the
+                    inquiry addressed to our team.</p>
+                <div class="contact-box">
+                    <form id="inquiry-form" style="display:grid;grid-template-columns:1fr 1fr;gap:16px"><label>Your name
+                            *<input name="name" required autocomplete="name"
+                                placeholder="Full name"></label><label>Email address *<input name="email" type="email"
+                                required autocomplete="email" placeholder="you@example.com"></label><label>Phone /
+                            WhatsApp<input name="phone" type="tel" autocomplete="tel"
+                                placeholder="+92 …"></label><label>Service you need<select name="service">
+                                <option>Website design</option>
+                                <option>Website development</option>
+                                <option>Landing page</option>
+                                <option>Website care / updates</option>
+                                <option>Other</option>
+                            </select></label><label style="grid-column:1/-1">Project details *<textarea name="details"
+                                required rows="5"
+                                placeholder="Tell us about your project, goals, and timeline"></textarea></label><button
+                            class="btn" type="submit"
+                            style="border:0;cursor:pointer;font:600 15px 'DM Sans';justify-self:start">Prepare email
+                            ↗</button>
+                        <p style="align-self:center;margin:0;color:var(--muted);font-size:12px">Email goes to both team
+                            addresses.</p>
+                    </form>
+                </div>
+                <div class="grid" style="grid-template-columns:1fr 1fr"><a class="card"
+                        href="mailto:areebagull926@gmail.com,aqeeali22@gmail.com">
+                        <div class="icon">✉</div>
+                        <h3>Email us</h3>
+                        <p>areebagull926@gmail.com<br>aqeeali22@gmail.com</p>
+                    </a><a class="card" href="https://wa.me/923376205863" target="_blank" rel="noopener">
+                        <div class="icon">◉</div>
+                        <h3>WhatsApp</h3>
+                        <p>+92 337 6205863</p>
+                    </a></div>
+                <p style="color:var(--muted);font-size:12px;margin-top:16px">* Required fields. Submitting opens your
+                    device’s email app; review and send the prefilled message there.</p>
+            </section>
+        </main>
+        <footer class="footer"><a class="brand" href="index.html">A R <b>Digital Solutions</b></a><span>WE BUILD YOUR
+                IDEAS · © 2026</span><a href="contact.html">LET’S TALK ↗</a></footer>
+    </div>
+    <script>const b = document.querySelector('.menu'), n = document.querySelector('.nav'); b.addEventListener('click', () => { const o = n.classList.toggle('open'); b.setAttribute('aria-expanded', o); b.textContent = o ? '×' : '☰' });</script>
+    <script>document.getElementById('inquiry-form').addEventListener('submit', function (e) { e.preventDefault(); if (!this.reportValidity()) return; const d = new FormData(this); const subject = 'Website inquiry from ' + d.get('name'); const body = 'Name: ' + d.get('name') + '\nEmail: ' + d.get('email') + '\nPhone / WhatsApp: ' + (d.get('phone') || 'Not provided') + '\nService: ' + d.get('service') + '\n\nProject details:\n' + d.get('details'); const url = 'mailto:areebagull926@gmail.com,aqeeali22@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body); window.location.href = url });</script>
+</body>
+
+</html>
